@@ -2,3 +2,4 @@
 *.umap filter=lfs diff=lfs merge=lfs -text
 *.fbx filter=lfs diff=lfs merge=lfs -text
 *.pak filter=lfs diff=lfs merge=lfs -text
+WindowsNoEditor/** filter=lfs diff=lfs merge=lfs -text
