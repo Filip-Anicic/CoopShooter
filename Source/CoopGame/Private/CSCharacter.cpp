@@ -86,6 +86,8 @@ void ACSCharacter::BeginPlay()
 		{
 			CurrentWeapon->SetOwner(this);
 			CurrentWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, WeaponAttachSocketName);
+
+
 		}
 	}
 }
