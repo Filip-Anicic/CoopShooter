@@ -40,6 +40,10 @@
 			"Enabled": false
 		},
 		{
+			"Name": "AdvancedSteamSessions",
+			"Enabled": true
+		},
+		{
 			"Name": "OnlineSubsystemSteam",
 			"Enabled": true
 		}
