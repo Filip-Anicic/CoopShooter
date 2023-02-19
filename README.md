@@ -24,6 +24,10 @@ Sprint - Shift
 
 
 ## Videos
-<img width=48% align="left" href="https://youtu.be/lyFGQ5qyIio" src="https://img.youtube.com/vi/lyFGQ5qyIio/hqdefault.jpg">
+<a href="https://youtu.be/lyFGQ5qyIio" target="_blank">
+ <img width=48% align="left" src="https://img.youtube.com/vi/lyFGQ5qyIio/hqdefault.jpg">
+</a>
 
-<img width=48% align="right" href="https://youtu.be/JkUG-Sr8t_g" src="https://img.youtube.com/vi/JkUG-Sr8t_g/hqdefault.jpg">
+<a href="https://youtu.be/JkUG-Sr8t_g">
+ <img width=48% align="right" src="https://img.youtube.com/vi/JkUG-Sr8t_g/hqdefault.jpg">
+</a>
