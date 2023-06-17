@@ -8,10 +8,22 @@
 
 void ACSProjectileWeapon::Fire()
 {
+	APawn* MyPawn = Cast<APawn>(GetOwner());
+	
+	if (MagCount <= 0 && MyPawn->IsLocallyControlled()) return;
+	
+	//Call Server to replicate this on other clients
+	if (Role != ROLE_Authority)
+	{
+		ServerFire();
+	}
+
 	//Trace the world from pawn eyes to crosshair location
 	AActor* MyOwner = GetOwner();
 	if (MyOwner)
 	{
+		MagCount--;
+		
 		FVector EyeLocation;
 		FRotator EyeRotation;
 		MyOwner->GetActorEyesViewPoint(EyeLocation, EyeRotation);

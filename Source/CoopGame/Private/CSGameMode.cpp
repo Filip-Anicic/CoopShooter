@@ -7,6 +7,7 @@
 #include "TimerManager.h"
 #include "Engine/World.h"
 #include "Components/CSHealthComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 
 ACSGameMode::ACSGameMode()
@@ -129,7 +130,7 @@ void ACSGameMode::CheckAnyPlayerAlive()
 void ACSGameMode::GameOver()
 {
 	EndWave();
-
+	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
 	// @TODO: Finish up the match, present 'Game Over' to the players.
 
 	UE_LOG(LogTemp, Log, TEXT("GAME OVER! Players Died!"));
